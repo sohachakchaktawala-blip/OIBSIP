@@ -1,0 +1,33 @@
+OASIS INFOBYTE CYBER ANALYST INTERSHIP
+SOHA CHAKCHAKTAWALA 
+PS C:\Users\soha> nmap --version
+      Nmap version 7.99 ( https://nmap.org )
+      Platform: i686-pc-windows-windows
+      Compiled with: nmap-liblua-5.4.8 openssl-3.0.16 nmap-libssh2-1.11.1 nmap-libz-1.3.2 nmap-libpcre2-10.47 Npcap-1.87 nmap-libdnet-1.18.0 ipv6
+      Compiled without:
+      Available nsock engines: iocp poll select
+      PS C:\Users\soha> nmap 127.0.0.1
+      Starting Nmap 7.99 ( https://nmap.org ) at 2026-05-04 08:32 +0530
+      Nmap scan report for localhost (127.0.0.1)
+      Host is up (0.00018s latency).
+      Not shown: 994 closed tcp ports (reset)
+      PORT STATE SERVICE
+      135/tcp open msrpc
+      445/tcp open microsoft-ds
+      1521/tcp open oracle
+      3306/tcp open mysql
+      5432/tcp open postgresql
+      8080/tcp open http-proxy
+      Nmap done: 1 IP address (1 host up) scanned in 0.60 seconds
+PS C:\Users\soha> nmap -sV -p 1-1000 127.0.0.1
+    Starting Nmap 7.99 ( https://nmap.org ) at 2026-05-04 08:32 +0530
+    Nmap scan report for localhost (127.0.0.1)
+    Host is up (0.0012s latency).
+    Not shown: 997 closed tcp ports (reset)
+    PORT STATE SERVICE VERSION
+    135/tcp open msrpc Microsoft Windows RPC
+    137/tcp filtered netbios-ns
+    445/tcp open microsoft-ds?
+    Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+    Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+    Nmap done: 1 IP address (1 host up) scanned in 12.14 seconds
